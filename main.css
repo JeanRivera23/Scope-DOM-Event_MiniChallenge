@@ -1,0 +1,145 @@
+body {
+  font-family: 'Audiowide', cursive;
+  background-color: black;
+  margin: 40px 90px 40px 90px;
+  padding: 50px 90px 90px 90px;
+  border: 8px dashed #FAF0E6;
+}
+
+img#pacMan {
+  width: 130px;
+  height: 139px;
+  position: relative;
+  left: 220px;
+}
+
+#pacManButton {
+  background-color: #18DD00;
+  color: white;
+  font-family: 'Audiowide', cursive;
+  border: 3px solid white;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  border-style: outset;
+  border-radius: 10px;
+}
+
+img#mushroom {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  left: 261px;
+}
+
+#mushroomButton {
+  background-color: #18DD00;
+  color: white;
+  font-family: 'Audiowide', cursive;
+  border: 3px solid white;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+  border-style: outset;
+  border-radius: 10px;
+}
+
+.arrow {
+  width: 25%;
+  height: 25%;
+  margin: 50px 0px 50px 0px;
+}
+
+
+h1 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+h3 {
+  color: #FAF0E6;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1.lava {
+  margin-bottom: 50px;
+}
+
+span {
+  text-decoration: underline;
+}
+
+img#lavaPic {
+  width: 80%;
+  height: 80%;
+  margin-bottom: 30px;
+  border: 2px dashed rgb(255, 0, 0);
+}
+
+form {
+  background-color: #F5F5F5;
+  border: 4px outset;
+  width: 200px;
+  height: 150px;
+  padding: 20px 0px 50px 40px;
+}
+
+label {
+  text-align: left;
+  color: black;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+#signIn {
+  text-align: left;
+  color: black;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#pacDiv {
+  display: inline;
+  float: left;
+}
+
+#mushroomDiv {
+  display: inline;
+  clear: left;
+}
+
+.downArrow {
+  clear: both;
+  position: relative;
+  left: 290px;
+}
+
+#form {
+  clear: both;
+  position: relative;
+  left: 265px;
+}
+
+.button1 {
+  position: relative;
+  left: 210px;
+  top: 30px;
+  margin-bottom: 70px;
+}
+
+.button2 {
+  position: relative;
+  left: 258px;
+  top: 30px;
+  margin-bottom: 70px;
+}
