@@ -34,18 +34,16 @@ lavaPit.onmouseover = function() {
 };
 
 
-// Create an HTML page with javascript that listens for a keypress.
+// Create an HTML page with javascript that listens for a keypress in a textbox.
 // When the user presses that key, the text of the h1 should show the value of the key they have pressed.
 // Example: If the user presses "J", the text inside the h1 should be "J".
 
-// var whatKey = document.getElementById('key');
-// var typeKey = KeyboardEvent.onkeypress;
-//
-// whatKey.onkeydown = function () {
-//   var key = keyCode;
-//   whatKey.textContent = key;
-// };
-
+document.addEventListener("keypress", function(event) {
+  console.log(event);
+  var info = event.key;
+  var whatKey = document.getElementById('key');
+  whatKey.textContent = info;
+});
 
 // Create an HTML page with a form. The form should include inputs for a username, password, an h1 tag as well as a button. In a Javascript file, write code that does the following things when the button is pressed:
 // checks that the password is 12345678
@@ -53,17 +51,20 @@ lavaPit.onmouseover = function() {
 // if the info in the form is correct, have Javascript change the text in the h1 to say "Congrats on knowing your username and password!"
 // if anything is wrong, send an alert message saying "Incorrect username or password"
 
-// var submit = document.getElementById('submit');
-// var password = document.getElementById('password');
-// var username = document.getElementById('username');
-// var message = document.getElementById('signIn');
-//
-// submit.onclick = function () {
-//   if (password === 12345678 && username.style.max-width: 13;) {
-//     message.textContent = 'Congrats on knowing your username and password!';
-//   }
-//
-//   else {
-//     alert('Incorrect username or password');
-//   }
-// };
+var submit = document.getElementById('submit');
+
+submit.addEventListener("click", function(event) {
+  event.preventDefault();
+  check();
+})
+
+function check() {
+  var password = document.getElementById('password').value;
+  var username = document.getElementById('username').value;
+  if (password == "12345678" && username.length <= 13) {
+    alert('Welcome!');
+  }
+  else {
+    alert("Incorrect password.");
+  }
+};
